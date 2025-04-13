@@ -11,7 +11,6 @@ echo 3. Vermenigvuldigen
 echo 4. Delen
 echo 5. Stoppen
 set /p keuze=Kies een optie (1-5): 
-pause
 if "%keuze%"=="1" goto optellen
 if "%keuze%"=="2" goto aftrekken
 if "%keuze%"=="3" goto vermenigvuldigen
@@ -26,7 +25,6 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% + %getal2%
 echo Het resultaat is: %resultaat%
-pause
 goto start
 
 :aftrekken
@@ -37,7 +35,6 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% - %getal2%
 echo Het resultaat is: %resultaat%
-pause
 goto start
 
 :vermenigvuldigen
@@ -48,7 +45,6 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% * %getal2%
 echo Het resultaat is: %resultaat%
-pause
 goto start
 
 :delen
@@ -63,5 +59,4 @@ if %getal2%==0 (
     set /a resultaat=%getal1% / %getal2%
     echo Het resultaat is: %resultaat%
 )
-pause
 goto start
