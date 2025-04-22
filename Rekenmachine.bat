@@ -25,6 +25,7 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% + %getal2%
 echo Het resultaat is: %resultaat%
+pause
 goto start
 
 :aftrekken
@@ -35,6 +36,7 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% - %getal2%
 echo Het resultaat is: %resultaat%
+pause
 goto start
 
 :vermenigvuldigen
@@ -45,6 +47,7 @@ echo Voer het tweede getal in:
 set /p getal2=Getal 2: 
 set /a resultaat=%getal1% * %getal2%
 echo Het resultaat is: %resultaat%
+pause
 goto start
 
 :delen
@@ -59,4 +62,5 @@ if %getal2%==0 (
     set /a resultaat=%getal1% / %getal2%
     echo Het resultaat is: %resultaat%
 )
+pause
 goto start
